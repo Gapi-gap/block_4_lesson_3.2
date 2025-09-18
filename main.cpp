@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<cctype>
 #include<string>
 
@@ -32,14 +32,14 @@ private:
 int main()
 {
 	setlocale(LC_ALL, "ru");
-	int number = 0;
-	std::cout << "Вы хотите изменить начальное значение счетчика? Введите yes для продолжения ";
+	int number = 1;
+	std::cout << "Р’С‹ С…РѕС‚РёС‚Рµ РёР·РјРµРЅРёС‚СЊ РЅР°С‡Р°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃС‡РµС‚С‡РёРєР°? Р’РІРµРґРёС‚Рµ yes РґР»СЏ РїСЂРѕРґРѕР»Р¶РµРЅРёСЏ ";
 	std::string YesNo;
 	std::cin >> YesNo;
-	std::string help = "Введите начальную команду ('+', '-', '=', 'x'): ";
+	std::string help = "Р’РІРµРґРёС‚Рµ РЅР°С‡Р°Р»СЊРЅСѓСЋ РєРѕРјР°РЅРґСѓ ('+', '-', '=', 'x'): ";
 	if (YesNo == "yes")
 	{
-		std::cout << "Введите начальное значение счетчика ";
+		std::cout << "Р’РІРµРґРёС‚Рµ РЅР°С‡Р°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃС‡РµС‚С‡РёРєР° ";
 		std::cin >> number;
 	}
 
@@ -58,6 +58,6 @@ int main()
 
 	} while (BreakPoint != 'x');
 
-	std::cout << "Прощай" << std::endl;
+	std::cout << "РџСЂРѕС‰Р°Р№" << std::endl;
 	return EXIT_SUCCESS;
 }
